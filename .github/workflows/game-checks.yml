@@ -1,25 +1,16 @@
-# Required Build runs for every PR and main update; no path-based pending checks.
-name: Build Check
+# Retained manual diagnostics; automatic validation is consolidated in ci.yml.
+name: Prawn Game checks
 'on':
-  pull_request:
-    branches:
-    - main
-  push:
-    branches:
-    - main
   workflow_dispatch: null
 permissions:
   contents: read
 concurrency:
-  group: theprawngame-build-${{ github.ref }}
-  cancel-in-progress: true
+  group: prawn-game-${{ github.ref }}
+  cancel-in-progress: 'true'
 jobs:
-  build:
-    name: Build
+  game:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    env:
-      NODE_OPTIONS: --max-old-space-size=2048
+    timeout-minutes: '10'
     steps:
     - uses: actions/checkout@v7
     - uses: actions/setup-node@v7
