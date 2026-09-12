@@ -34,3 +34,7 @@ workflow hygiene and broader free-tier measurements remain open. This static
 app has no cloud polling or persistent saves. Bundle size is not a measurement
 of monthly savings. Keep production evidence linked to the source release above;
 subsequent documentation-only commits do not change its application files.
+
+2026-09-12: opt in to the shared activity-branch heartbeat. Weekly repository activity moves to automation/heartbeat, which Vercel is configured not to deploy. Normal app branches keep deploying. Local and hosted validation, production release, and first manual heartbeat verification are pending. The 60-day inactivity behavior requires longer observation. No application data or collection schedules are changed.
+
+2026-09-12 heartbeat validation passed locally. Source policy tests and workflow parsing pass; the application pilot builds pass. Hosted PR checks, production matching and the first branch heartbeat are the next release gates. No broad sync or disabled workflow reactivation was run.
