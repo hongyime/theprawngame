@@ -34,6 +34,11 @@ dist-ssr
 
 
 
+
+# Local browser verification output
+test-results/
+playwright-report/
+
 # AI / editor dot directories (managed via sourcerepo)
 .*
 !.github/
@@ -69,7 +74,3 @@ skills/
 skills-lock.json
 docs/
 # End AI / editor dot directories (managed via sourcerepo)
-
-# Local browser verification output
-test-results/
-playwright-report/
