@@ -63,3 +63,5 @@ headers. A release should verify its exact deployment commit and public assets.
 
 Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 The bundled Space Grotesk font retains its [SIL Open Font License](public/space-grotesk-license.txt).
+
+2026-09-15: PR #211 reconciles the shared heartbeat and shallow LFS guard while retaining the pinned v7 labeler, v7 Python setup and existing browser-output ignore rules. The heartbeat validates its configured root and refuses collisions or tampered branch contents. LFS scan errors fail the check. App code, the 1,425 question records, dependencies and Vercel caching remain unchanged. Required Build and Vercel checks must pass before ordinary merge; verify the resulting production commit and browser behavior.
