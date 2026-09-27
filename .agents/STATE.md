@@ -44,3 +44,7 @@ subsequent documentation-only commits do not change its application files.
 2026-09-12 local validation passes: locked install, 14 unit tests and 27 browser scenarios, type checking and production build. Application code, data, dependencies and Vercel configuration are byte-preserved. The shared checked bot policy is installed but its workflows remain disabled; required Build/Vercel rules will be enabled only after hosted and production verification. Default CodeQL completion is included in the policy triggers.
 
 2026-09-15: PR #211 reconciles the shared heartbeat and shallow LFS guard while retaining the pinned v7 labeler, v7 Python setup and existing browser-output ignore rules. The heartbeat validates its configured root and refuses collisions or tampered branch contents. LFS scan errors fail the check. App code, the 1,425 question records, dependencies and Vercel caching remain unchanged. Required Build and Vercel checks must pass before ordinary merge; verify the resulting production commit and browser behavior.
+
+## Privacy maintenance - 2026-09-27
+
+Remove the optional personal security contact while retaining private vulnerability-reporting guidance. The narrow documentation patch is prepared from the current default branch; staged whitespace and the inherited identity hook are publication checks. Application behavior is unchanged.
